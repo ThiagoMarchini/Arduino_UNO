@@ -54,12 +54,12 @@ const getWeather = async () => {
         console.log('Powered by Tomorrow.io');
         const rgb = new five.Led.RGB( { pins: [3, 5, 6] });
         const willBeDamp = result2.data.data.timelines[0].intervals[1].values.precipitationProbability > 50;
-        const tempDelta = result2.data.data.timelines[0].intervals[1].values.temperature > 25;
+        const tempHigh = result2.data.data.timelines[0].intervals[1].values.temperature > 25;
   
-        if (tempDelta) {
-          rgb.color('#ff0000');
-        } else {
+        if (tempHigh) {
           rgb.color('#ffffff');
+        } else {
+          rgb.color('#ff0000');
         }
         if (willBeDamp) { rgb.strobe(1000); }
       });
