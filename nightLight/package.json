@@ -1,0 +1,15 @@
+{
+  "name": "nightLight",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nightLight.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "johnny-five": "^2.1.0"
+  }
+}
