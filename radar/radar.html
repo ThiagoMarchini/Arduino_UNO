@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title>Radar</title>
+  <script src="./node_modules/jquery/dist/jquery.js"></script>
+  <script src="./node_modules/socket.io/client-dist/socket.io.js"></script>
+</head>
+<body>
+  <div>
+    <span id="degrees"></span>
+    <span id="distance"></span>
+  </div>
+  <canvas id="canvas" width="800" height="400" style="position:relative;z-index:10">
+  </canvas>
+  <script src="./radar-client.js"></script>
+</html>
